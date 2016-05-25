@@ -1,5 +1,22 @@
 # ----- template.git.R.v160524t ----- #
 
+# ========================== #
+# ========================== #
+# ===== Documentation. ===== #
+# ========================== #
+# ========================== #
+#
+# Description: The R script "p160524t.R" generates the propensity-score-based results found in the article "Likelihood of Unemployed Smokers vs Nonsmokers Attaining Reemployment in a One-Year Observational Study" by Judith J. Prochaska et al (2016). NOTE: The two sections with the header "##### Path and variable names: Define." must be uncommented and populated for the script to run properly.
+#
+# 160524t [Daza_EJ] --- Created program from IMPACT.R, which was itself created on 151006t.
+#
+
+
+
+
+
+
+
 # ========================================================= #
 # ========================================================= #
 # ===== Preliminary code (e.g., packages, libraries). ===== #
@@ -27,21 +44,6 @@ library(foreign)
 
 # Random seed for bootstrap procedures.
 scalar.seed <- 1511020118
-
-
-
-
-
-
-
-# ========================== #
-# ========================== #
-# ===== Documentation. ===== #
-# ========================== #
-# ========================== #
-#
-# 160524t [Daza_EJ] --- Created program from IMPACT.R, which was itself created on 151006t.
-#
 
 
 

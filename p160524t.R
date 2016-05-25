@@ -550,12 +550,10 @@ psmodeldiag <- function(
       modelname,
       ".pdf"
     ),
-    #     height=5.5,
     height=2.75,
     width=8,
     onefile=T
   )
-  #   grid.arrange(plot.psoverlap, plot.ipwdistribution, nrow=2)
   plot(plot.psoverlap)
   dev.off()
 
@@ -688,7 +686,6 @@ table(var.trt_covariates05_trimmed)
 glm.covariates05 <- glm(
   data = analdata_covariates05_trimmed,
   formula = aslogical_new_var.reemployment12mo ~ aslogical_new_var.smoking,
-  #   family = "binomial",
   weights = var.sipw05
 )
 summary(glm.covariates05)
@@ -775,7 +772,6 @@ table(var.trt_covariates10_trimmed)
 glm.covariates10 <- glm(
   data = analdata_covariates10_trimmed,
   formula = aslogical_new_var.reemployment12mo ~ aslogical_new_var.smoking,
-  #   family = "binomial",
   weights = var.sipw10
 )
 summary(glm.covariates10)

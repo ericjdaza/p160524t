@@ -511,8 +511,6 @@ psmodeldiag <- function(
   var.sipwhat_trt1 <- var.predict.psmarginal / var.predict.pshat # = Pr(D=1) / Pr(D=1|S)
   
   # Create the PS and IPW plot data.
-  #   var.predict.pshat_trt0 <- var.predict.pshat[var.trt == 0]
-  #   var.predict.pshat_trt1 <- var.predict.pshat[var.trt == 1]
   var.predict.pshat_trt0 <- ifelse(var.trt == 0, var.predict.pshat, NA)
   var.predict.pshat_trt1 <- ifelse(var.trt == 1, var.predict.pshat, NA)
   
